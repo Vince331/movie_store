@@ -1,0 +1,5 @@
+  <h1><%= @movie.name %></h1> - <h3><%= @movie.price %></h3>
+<%= link_to "Movie Index", movies_path %>
+
+<%= link_to "edit movie", edit_movie_path(@movie) %>
+<%= link_to "Delete movie", movie_path(@movie), method: :delete %>
